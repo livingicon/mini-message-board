@@ -8,19 +8,19 @@
 
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
-    <!-- <div>
+    <a href="/new">Send A Message</a>
+    <div>
       <h2>Messages</h2>
-
       <div>
-        <% messages.forEach(function(message) { %>
+        <% messages.forEach((m) => { %>
         <div>
-          <h3><%= message.user %></h3>
-          <p><%= message.text %></p>
+          <h3><%= m.user %></h3>
+          <p><%= m.text %></p>
+          <p><% m.added %></p>
         </div>
         <% }); %>
       </div>
-
-    </div> -->
+    </div>
     
   </body>
 </html>
